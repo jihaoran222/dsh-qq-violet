@@ -1,0 +1,61 @@
+{
+  "name": "dsh-qq-violet",
+  "version": "1.6.0",
+  "description": "通到 QQ（派生版）：DSH 里的 AI 伙伴和 QQ 双向互通。派生自 Yuuyuko-uu/dsh-qq-link，原作者 Yuuyuko-uu；本版加了自动换会话、水位提醒、水群与表情发送。",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "type": "module",
+  "main": "lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "tools"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  },
+  "author": "Yuuyuko-uu (https://github.com/Yuuyuko-uu); fork maintained by jihaoran222 (https://github.com/jihaoran222)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihaoran222/dsh-qq-violet.git"
+  },
+  "homepage": "https://github.com/jihaoran222/dsh-qq-violet#readme",
+  "bugs": {
+    "url": "https://github.com/jihaoran222/dsh-qq-violet/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ]
+}
