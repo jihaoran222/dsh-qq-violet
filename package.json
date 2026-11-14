@@ -1,6 +1,6 @@
 {
   "name": "dsh-qq-violet",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "通到 QQ（派生版）：DSH 里的 AI 伙伴和 QQ 双向互通。派生自 Yuuyuko-uu/dsh-qq-link，原作者 Yuuyuko-uu；本版加了自动换会话、水位提醒、水群与表情发送。",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
